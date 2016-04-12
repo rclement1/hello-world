@@ -1,0 +1,308 @@
+\documentclass[12pt]{report}
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\usepackage[a4paper, top=2cm, bottom=4cm, left=4cm, right=4cm]{geometry}
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage{placeins}
+\linespread{1.3}
+\begin{document}
+	\begin{titlepage}
+		\centering
+		\includegraphics[width=0.15\textwidth]{crest.png}\par\vspace{1cm}
+		{\scshape\LARGE University of Edinburgh \par}
+		\vspace{1cm}
+		{\scshape\Large Confirmation report\par}
+		\vspace{1.5cm}
+		{\huge\bfseries Earthquake nucleation: small signals from Big Data\par}
+		\vspace{2cm}
+		{\Large\itshape Roseanne Clement \par}
+		\vfill
+		advised by\par
+		Dr. Mark Chapman\par
+		supervised by\par
+		Prof. Ian Main, Dr. Andrew Bell and Dr. Brian Baptie
+		
+		\vfill
+		
+		% Bottom of the page
+		{\large \today\par}
+	\end{titlepage}
+
+\tableofcontents
+
+\chapter{Overview}
+This document contains the confirmation report, as specified by the terms of the PhD confirmation process. It provides an overview of the planned research which will be taken out for the duration of the PhD. It will also be looking at the time plan of the research, as well as the resources and data management protocols that will be undertaken and the supervisory arrangements. 
+
+\chapter{Context}
+\section{Why is earthquake forecasting important?}
+The field of earthquake forecasting has been a controversial one due to the unpredictability of earthquakes. It has been reported that there are occasionally precursory signals prior to an earthquake \citep{Sholz2002}. However, it is not as obvious at the time of the precursory event, which can be in the form of nucleating foreshocks. 
+
+The trouble with using foreshocks as a forecasting method, is that the foreshock is only defined in retrospect, i.e. a foreshock is a smaller event before the main event, and so you must have the main event in order to specify what is a foreshock. If one is trying to forecast an earthquake, it is then a question of: what is the level of probability that you then warn the public for an evacuation? 
+
+There have been some successes in this field, such as the 1975 Haicheng, China earthquake prediction, but there have also been some failings to do with portraying the risk efficiently to the public, such as the 2009 L'Aquila, Italy earthquake, which are discussed below. 
+
+\subsection{1975 Haicheng, China earthquake prediction}
+
+The Magnitude 7.3 main shock occurred at 19:36 local time on 4th February, which would have usually caused mass devastation. However, on the morning of the 4th, the city of Haicheng was evacuated due to the in depth prediction method which covered timeframes from years to hour length predictions by a group of scientists \citep{Raleigh1977,Wang2006}. 
+
+The reason for the evacuation was due to a build up of these predictions from June 1974 to the morning of the 4th February 197, which triggered an evacuation of the city due to the high probability of an earthquake striking \citep{Raleigh1977}. Once the earthquake struck, it did in fact cause significant damage to the city of Haicheng, which hosted approximately 1 million inhabitants at the time (prior to the evacuation). \cite{Raleigh1977} reported that 90\% of structures were destroyed, and there was still over 2,000 deaths. However, if not for the city's evacuation that morning, there would have been a predicted casualty count of at least 150,000. 
+
+\subsection{2009 L'Aquila, Italy earthquake}
+One can refer to the highly-publicised 2009 Magnitude 6.4 L'Aquila, Italy earthquake, which was preceded by a seismic swarm over several months, as one of the biggest failings in portraying seismic risk to the public. As discussed in the \textit{Nature} article by \citet{Hall2011}, one week prior to the earthquake, a commission group comprising of scientists and a government official, gathered to discuss the risk probability of such an earthquake in the area. When it came to conveying the earthquake risk information to the public, the government official gave more a message of reassurance \citep{Yeo2014}. The devastating L'Aquila earthquake struck one week after the meeting, killing more than 300 people and injuring many more \citep{Hall2011}. Those affected by the earthquake felt that inadequate information regarding the risk had been conveyed to them, and so a trial was brought forth where the six scientists and one government official present at the meeting, were put on trial for manslaughter. Although they were initially convicted, outcry was heard and an appeal was won to overturn the verdict. This resulted in the scientists not serving their initial sentence, however the government official was deemed negligent for his message of reassurance to the public and was given a two year sentence.
+
+%One can refer to the highly-publicised 2009 Magnitude 6.4 L'Aquila, Italy earthquake, which was preceded by a seismic swarm over several months, as one of the biggest failings in portraying seismic risk to the public. As discussed in the \textit{Nature} article by \citet{Hall2011}, one week prior to the earthquake, a commission group comprising of scientists and a government official, gathered to discuss the risk probability of such an earthquake in the area. When presented with a question of how likely the current seismic swarm would then result in an earthquake, one scientist responded with, ``it is unlikely that an earthquake like the one in 1703 [a large earthquake in L'Aquila which was preceded by several other earthquakes] could occur in the short term, but the possibility cannot be totally excluded. " However, this excerpt was only available via the minutes of the meeting several weeks later. The information which had been conveyed to the public instead was a message, given by a government official, of reassurance \citep{Yeo2014}. The devastating L'Aquila earthquake struck one week after the meeting, killing more than 300 people and injuring many more \citep{Hall2011}. Those affected by the earthquake felt that inadequate information regarding the risk had been conveyed to them, and so a trial was brought forth where the six scientists and one government official present at the meeting, were put on trial for manslaughter. Although they were initially convicted, outcry was heard and an appeal was won to overturn the verdict. This resulted in the scientists not serving their initial sentence, however the government official was deemed negligent for his message of reassurance to the public and so was given a two year sentence.
+
+This event is seen to have discouraged scientists from offering advice if presented with a similar scenario in the future, which stems from the issue of conveying scientific statistics effectively to the public \citep{AGU2010, Yeo2014}. This can be a difficult task, as the risk of potential disaster must be communicated, but has to be done without causing panic. At present, there is no real quantifiable prediction method in earthquake forecasting, therefore it is difficult to convey this risk to the public. 
+
+The L'Aquila disaster had a direct impact on the policy recommendations of the International Commission on Earthquake Forecasting (ICEF) report \citep{Jordan2011}. It states that more work needs to be done in the earthquake forecasting sector, and that ``any information about the future occurrence of earthquakes contains large uncertainties and, therefore, can only be evaluated and provided in terms of probabilities." It is discussed how the research on earthquake predictability is still in the early stages as there is no reliable method at present that can provide earthquake prediction. At present, scientists can identify particular areas of earthquake risk and at most make a probabilistic forecast. 
+
+\subsection{2011 Rome, Italy rumoured earthquake}
+An example of how the L'Aquila disaster and the ICEF report have affected earthquake forecasting and hazard awareness today can be seen in the rumours of an earthquake happening in Rome, Italy on 11th May 2011 \citep{Nostro2012}. This date had been reportedly predicted by a scientist (who died in 1979), where an earthquake would completely destroy Rome. With the age of easily accessible social media, this prediction picked up momentum prior to the predicted date, causing the Istituto Nazionale di Geofisica e Vulcanologia (INGV) to be inundated with requests for information on the prediction. Instead of releasing a statement of reassurance, the INGV instead chose to host an earthquake awareness open day. This was organised as a way to inform the public about the seismicity in Italy. This open day event worked effectively in disseminating information on seismic awareness preparation and education to the public. It allowed for a rumour which was initially fuelling panic in the public to be turned into an informative day on earthquake hazard.
+
+%An example of how the L'Aquila disaster and the ICEF report have affected earthquake forecasting and hazard awareness today can be seen in the rumours of an earthquake happening in Rome, Italy on 11th May 2011 \citep{Nostro2012}. This date had been reportedly predicted by a scientist (who died in 1979), where an earthquake would completely destroy Rome. With the age of easily accessible social media, this prediction picked up momentum prior to the predicted date, causing the Istituto Nazionale di Geofisica e Vulcanologia (INGV) to be inundated with requests for information on the prediction. Instead of releasing a statement of reassurance, the INGV instead chose to host an earthquake awareness open day. This was organised as a way to inform the public about the seismicity in Italy, earthquake processes and hazards, and to give seismicity updates throughout the predicted day. \cite{Nostro2012} reported that over 3000 visitors attended the open day, and many more viewed the videos which were posted online by the INGV in order to raise awareness with those unable to visit the Institute. This open day event worked effectively in disseminating information on seismic awareness preparation and education to the public. It allowed for a rumour which was initially fuelling panic in the public to be turned into an informative day on earthquake hazard.              
+
+\subsection{Seismic hazard maps}
+
+At present, the most reliable way of reducing seismic-related disasters is by determining the seismic hazard risk. This is done by calculating the probability of an earthquake occurring for a particular region by analysing the seismic activity, which then allows for a seismic hazard map to be created and released into the public domain. An example of this can be seen in Figure \ref{Woe_hazard}, which shows the Peak Ground Acceleration (PGA) expected to be reached or exceeded with a 10\% probability in the next 50 years.
+
+Although seismic hazard maps are an effective way of examining the seismic risk, more is needed on understanding what happens before an earthquake in terms of forecasting methods. 
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[scale=0.50, trim=6cm 0cm 6cm 0cm]{Woe_hazard.png}
+		\caption{European seismic hazard map which shows the probability of the peak ground acceleration in the next 50 years with 10\% (from \cite{Giardini2013})}
+		\label{Woe_hazard}
+	\end{center}
+\end{figure}
+
+\FloatBarrier
+
+\section{What earthquake precursors have others researched?}
+
+There are theories on what happens before an earthquake, most of which are discussed in \cite{Kagan1997}, but I will only go into a few of the most well known precursors in this paper. Some of the forerunners of earthquake forecasting are animal behaviour prior to an earthquake, changes in the Earth's magnetic field, as well as foreshock analysis.  This section will discuss the work done in each sector, and what has been established as reliable. 
+
+\subsection{Unusual animal behaviour}
+Animal behaviour has long been linked to earthquake prediction \citep{Logan1977,Lott1981}. A recent article found that a toad population 74km from L'Aquila showed a change in behaviour 5 days before the Magnitude 6.4 earthquake in 2009 and did not resume normal behaviour until after \citep{Grant2010}. It is unsure what caused the toad's to act this way, but \cite{Kirschvink2000} reports that there are some animals in seismically active regions who have evolved to sense the seismicity. 
+
+%Animal behaviour has long been linked to earthquake prediction \citep{Logan1977,Lott1981}. A recent article found that a toad population 74km from L'Aquila showed a change in behaviour 5 days before the Magnitude 6.4 earthquake in 2009 and did not resume normal behaviour until after \citep{Grant2010}. This report found that the toad's behaviour directly correlated with a measured ionspheric disturbance. It is unsure what caused the toad's to act this way, but \cite{Kirschvink2000} reports that there are some animals in seismically active regions who have evolved to sense the seismicity. 
+
+%\cite{Li2003} tested out several methods for earthquake predictions. One method included the frequency at which their budgerigars (a type of bird) jumped prior to an earthquake. They found that the birds would have an abnormal jumping rate prior to 81\% of the earthquakes which had surface magnitude larger than 7 between 1995 and 2000. They combined this method with tests on crustal stress in order to make predictions on earthquakes, but state in their article that these are very difficult to explain why they occur prior to an earthquake and that more analysis is required.
+
+There have been several other trends found between animal behaviour and earthquake forecasting. \cite{Berberich2013} found that red wood ants changed their behaviour in the few hours before earthquakes, and did not resume their normal behaviour until after the earthquake. \cite{Yamauchi2014} reported that pets' behaviour and dairy cows' milk yields were affected in the period prior to the 2011 Magnitude 9 Tohoku-Oki, Japan earthquake. They found that not only was there precursory evidence of unusual behaviour in the pets and a decrease in milk yield, but that there was a relationship with this and the distance from the earthquake's epicentre. 
+
+Although several methods of monitoring animal behaviour have been investigated, it is not relied on as a method due to the uncertainty in these measurements and the fact that there is no way of explaining how it works. Most likely, the animals are reacting to the geophysical processes which are intertwined with earthquakes. %This could be due to processes such as the oxidation of dissolved organic compounds near water surfaces, which are found to irritate some animals, thus causing them to flee \citep{Grant2011}. 
+Thus, animals may react before an earthquake, but there is no way to directly relate that to when and where the earthquake will occur, therefore making it unreliable. 
+
+\subsection{Changes in the Earth's electric field}
+Forecasting earthquakes by analysing the electric signals which are emitted by the Earth has been one of the many theories of earthquake prediction. This was made more popular when three scientists; Varotsos, Alexopoulos and Nomicos, measured seismic electrical signals to reportedly predict earthquakes in Greece via a method which has been coined the VAN method \citep{Varotsos1988}. It measures and analyses the potential difference between two electrodes which have been driven into the Earth at some depth. With many of these electrodes over various sites in Greece, the transient changes in the electric current of the Earth (seismic electrical signals) can then be continuously monitored. \cite{Varotsos1988, Varotsos1993} reported that by using this method, earthquakes were able to be predicted, both in time and space, with great accuracy. It has managed to be replicated for some sites in Japan \citep{Uyeda2009}, however it is yet to be officially verified as an earthquake forecasting tool.
+
+%Forecasting earthquakes by analysing the electric signals which are emitted by the Earth has been one of the many theories of earthquake prediction. This was made more popular when three scientists; Varotsos, Alexopoulos and Nomicos, measured seismic electrical signals to reportedly predict earthquakes in Greece via a method which has been coined the VAN method \citep{Varotsos1988}. The VAN method works by measuring and analysing the potential difference between two electrodes which have been driven into the Earth at some depth. With many of these electrodes over various sites in Greece, the transient changes in the electric current of the Earth (seismic electrical signals) can then be continuously monitored. \cite{Varotsos1988} reported that by using this method, earthquakes were able to be predicted, both in time and space, with great accuracy. The team have also been evolving this method in order to increase the reliability of the VAN method \citep{Varotsos1993}, which has managed to be replicated for some sites in Japan \citep{Uyeda2009}, however it is yet to be officially verified as an earthquake forecasting tool.
+
+%Other reports of electric fields correlating with seismic activity is discussed by \cite{Johnston2002}, where the advances of electromagnetic fields measurements in the past few decades are analysed. However it is remarked that although there are no clear electromagnetic signals prior to an earthquake, relations have been found between the coseismic magnetic field and earthquake stress drops. 
+
+The way in which the Earth's electric field changes prior to an earthquake is seen to be related to animal behaviour, which could potentially explain the mechanisms behind an animal's change in behaviour prior to an earthquake \citep{Ikeya1996}. Other than possibly the VAN method, which has yet to be verified, no other methods have been established in the community as being reliable enough to accurately predict earthquakes thus far from the Earth's magnetic field.  
+
+\subsection{Foreshock analysis}
+A foreshock sequence prior to an earthquake has long been thought of as one of the most promising ways to forecast earthquakes \citep{Papazachos1975, Jones1979}. However, the trouble lies in the retrospective labelling - you do not know that it is a foreshock until the main event has occurred. Nonetheless, there have been cases where there have been earthquakes which have been correctly forecast from their foreshocks, but mostly retrospectively. It should also be noted that there is a large breadth of work done in this area, and so I have only picked out several examples of foreshock analysis. 
+
+%There are many directions in which the research is driven; some papers focus more so on the statistical side, such as \cite{Kagan2000} who investigated the statistical side of earthquake clustering prior to an earthquake. In using a Poisson cluster process, that is to say that each cluster or sequences of earthquakes are statistically independent but that individual earthquakes in the cluster are dependent, they report that the applications of using foreshocks to predict main-shock probability in real-time could be possible.
+
+%\cite{Kagan1987} suggest a method which analyses the incoming seismic waveforms which predict earthquakes by applying a statistical procedure which reduces the average uncertainty in the rate of occurrence for future earthquakes. 
+%There are some papers available which go into further detail, namely \cite{Mignan2014,Florido2015}, review different earthquake foreshock sequences which have been able to be forecasted. 
+
+\subsubsection{1975 Haicheng, China earthquake}
+The case of the 1975 Haicheng, China earthquake (discussed in section 2.1.1), is an example of how foreshocks were forecasted, and so led to the evacuation of the city prior to the earthquake. The scientists who were analysing this area from 1970 predicted the earthquake in incremental stages, narrowing in on both location and time with different prediction timeframes. 
+
+The first prediction was made in June 1974, whereby a medium prediction was made of an earthquake striking with a Magnitude of 5 - 6 in the next one - two years due to earthquakes in the broader region occurring. The next prediction in January 1975 was short term, where it was forecasted that an earthquake of Magnitude 5.5 - 6 would occur within the next six months. This was due to seismic swarms (later turning out to be very pronounced foreshocks) along with some anomalies in the area. Finally, an imminent prediction was made when foreshocks of up to a Magnitude of 4.8 occurred between the 1st and 3rd of February, which prompted the evacuation on the morning of 4th, with the earthquake occurring that very evening \citep{Raleigh1977, Wang2006, Chen2010}. This increase in foreshocks prior to the earthquake can be seen in Figure \ref{Ray_fore}, which was examined by the seismologists before triggering the decision to evacuate the city. 
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[scale=0.5, trim=6cm 0cm 6cm 0cm]{Raleigh_foreshocks.png}
+		\caption{Frequency of the foreshocks prior to the 1975 Magnitude 7.3 Haicheng, China earthquake (from \cite{Raleigh1977})}
+		\label{Ray_fore}
+	\end{center}
+\end{figure}
+
+Although this prediction saved many lives, it unfortunately was not developed into a reliable method due to the foreshocks which occurred prior to the earthquake being reported as uncommon. This can be seen by the 1976 Magnitude 7.8 Tangshan, China and the 2008 Magnitude 7.9 Wenchaun, China earthquakes where there were no foreshocks picked up before these earthquakes, and so these caused a massive amount of destruction with no prior warning \citep{Chen2010}. 
+
+%\subsubsection{Parkfield, USA earthquakes}
+%It was found that 17 minutes prior to the 1934 Magnitude 5.5 Parkfield, USA earthquake a foreshock occurred. The interesting thing is that in 1966 another earthquake occurred, with a remarkable similarity to the 1934 earthquake \citep{Bakun1979}. The sequence was identical between the two; they had a common epicentre, magnitudes, fault-plane solutions, and amazingly enough, they both had a foreshock of Magnitude 5.1 occurring at roughly 17 minutes before the main shock \citep{Bakun1985}. 
+%
+%Repeating sequences of earthquakes over the years have occurred in areas such as the Parkfield segment of the San Andreas Fault for more than just these two earthquakes. \cite{Nadeau1998} showed that most of the seismic activity in this area contained these repeating sequences, with quasi-periodic sequences of earthquakes that have had basically the same hypocenter and seismograms for over 9 years. They characterised the waveforms by using cross-correlate, as well as looking at the data for any outliers of this method. 
+%
+%%Repeating sequences of earthquakes over the years have occurred in areas such as the Parkfield segment of the San Andreas Fault for more than just these two earthquakes. \cite{Nadeau1998} showed that most of the seismic activity in this area contained these repeating sequences, with quasi-periodic sequences of earthquakes that have had basically the same hypocenter and seismograms for over 9 years. Their method was to first cross-correlate the waveforms in order to characterise them, and look at the data to see if there were any key features that the cross-correlation missed out. They were able to organise over half of their events by sorting them into groups of two or more events which had the same hypocentre and the same seismograms for the 9 year period.  
+%
+%More information on this particular area can be found in the review paper by \cite{Bakun2005}, which discusses the lack of precursory events prior to the 1901, 1922 and 2004 Parkfield earthquakes.
+
+%\subsubsection{1992 Landers, USA earthquake}
+%A paper by \cite{Dodge1995} showed that in the 7 hours prior to the 1992 Magnitude 7.3 Landers earthquake, there was at least 28 foreshock events. They showed that for this case, the foreshocks did not trigger one another (as is commonly assumed), but that instead it was due to an aseismic nucleation process, most likely being aseismic creep. 
+
+\subsubsection{1999-2011 North Pacific earthquakes}
+\cite{Bouchon2013} used seismic catalogues of the North Pacific area to analyse the foreshock sequences prior to all earthquakes with a magnitude of at least 6.5 and at depths shallower than 50 km, occurring between 1999 - 2011. It was found that interplate earthquakes were preceded by accelerating seismic activity (foreshocks) in the months to days before the mainshock, whereas this was infrequently the case for intraplate earthquakes. This can be seen in Figure \ref{Bouchon_inter}, which shows that the probability that the acceleration of seismicity is not due to chance is very high for interplates. This was deduced by analysis that at plate boundaries (therefore interplate), the interface slowly slips before the rupture, thus causing a long precursory phase. 
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[scale=0.63, trim=6cm 0cm 6cm 0cm]{Bouchon_inter.png}
+		\caption{Probability that the acceleration of inter (top) and intra (bottom) plate earthquakes is not due to chance for all observed earthquakes in the North Pacific area between 1999 and 2011 (from \cite{Bouchon2013})}
+		\label{Bouchon_inter}
+	\end{center}
+\end{figure}
+
+\FloatBarrier
+
+\subsubsection{2011 Tohoku-Oki, Japan earthquake}
+In the lead up to the 11th March 2011 Magnitude 9 Tohoku-Oki, Japan earthquake, there were two distinct foreshock sequences which were analysed by a waveform correlation method, as discussed in \cite{Kato2012}. These foreshock sequences lasted 23 days prior to the mainshock, one of which had a top Magnitude of 7.3 on 9th March, which many believed to be the main shock until the Magnitude 9 happened two days later \citep{Asano2011,Kato2012}. These foreshocks had thrust-type focal mechanisms, and occurred along the plate boundary, thus making them interplate events \citep{Asano2011}.
+
+The paper by \cite{Kato2012} looked at correlating all earthquakes in the lead up to the main shock with one another to investigate whether there was any repeating sequences within the dataset. It was found that 90\% of all migrating foreshocks in this area with moderate to large magnitudes had an identical faulting mechanism to the mainshock and that the dataset included small repeating earthquakes which had identical mechanisms and locations, as can be seen in Figure \ref{Kato_eq}. 
+
+%\cite{Kato2012} report that there was propagation of slow slip, which could be interpreted as part of the nucleation process, but that there was no major acceleration in the slip and rupture growth. However, the second sequence of slow slip did have larger slip rates and migration speeds than the first sequence. 
+
+Other notable work done on this particular earthquake is that of the paper by \cite{Zhang2015}, which looked at using an advanced match and locate technique, which works effectively for low-magnitude event detections. It uses template events to detect small events through the stacking of the cross-correlated waveforms of template events and the potential small events. With this method, they were able to detect foreshocks on a much smaller magnitude due to the sensitivity of the technique, and with this they found 1427 foreshocks. Their analysis concludes with them believing there are in fact five migration sequences to the main earthquake. 
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[scale=0.4, trim=6cm 0cm 6cm 0cm]{Kato_eq.png}
+		\caption{Foreshocks and aftershocks of the 2011 Magnitude 9 Tohoku-Oki, Japan earthquake, where the black star represents the main shock, yellow star being the largest foreshock and red stars are the repeating earthquake epicentres. The yellow and white dots represent the total earthquake catalog, and the blue triangles are the seismic stations (from \cite{Kato2012})}
+		\label{Kato_eq}
+	\end{center}
+\end{figure}
+
+\FloatBarrier
+
+%\cite{Florido2015} Chile stuff?
+
+\subsubsection{2014 Iquique, Chile earthquake}
+Before the Magnitude 8.1 Iquique, Chile earthquake on 1st April 2014, there were seismic clusters lasting a few weeks, and with increasing magnitudes \citep{Schurr2014}. By the time of March 2014, very pronounced seismic activity was apparent, which resulted in a total of a 150 km long portion of the seismic gap breaking \citep{Ruiz2014}. 
+
+\cite{Kato2014} used a matched filter technique to show that repeating earthquakes were found in the foreshock sequence of this event, which indicates several slow slip events along the plate boundary fault in the foreshocks. The last slow slip event migrated towards where the mainshock then occurred, resulting in the Magnitude 8.1 earthquake. 
+
+
+\subsubsection{1999 Izmit, Turkey earthquake}
+\cite{Bouchon2011} presented a paper on the foreshocks occurring before the 1999 Magnitude 7.6 Izmit, Turkey earthquake, which were initially disregarded as seismic noise. By extracting information from the seismic recording, it was shown how four large foreshocks of repetitive seismic bursts, originating at the hypocenter, occurred with increasing amplitude in the 44 minutes before the earthquake. Low frequency seismic noise also increased with time closer to the earthquake, which points towards slow slip occurring at the base of the brittle crust of the Earth. 
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[scale=0.7, trim=6cm 0cm 6cm 0cm]{Bouchon_preeq.png}
+		\caption{Foreshocks recovered in the 40 seconds prior to the 1999 Magnitude 7.6 Izmit earthquake (from \cite{Bouchon2011, Kerr2011})}
+		\label{Bouchon_preeq}
+	\end{center}
+\end{figure}
+
+The method that \cite{Bouchon2011} used to complete this analysis was by selecting one of the foreshocks' waveforms as a template to then cross-correlate with the others, which would output the similarity of the smaller shocks within the seismic recording. It was found that there were occurrences of repeating events which had the same spectral shape and corner frequencies (the frequency beyond which the spectral amplitude decays), which indicates that the events came from the same source point. 
+
+Bouchon and his colleagues believe that, from these findings, the accelerating slow slip led to the main rupture \citep{Bouchon2011,Kerr2011}. 
+
+The next big question which has been posed by these individual foreshock analyses is: how general are these results? 
+
+%\cite{Hawthorne2013} also showed that during slow-slip events in central Cascadia, the strain rate is larger when the seismic amplitude is larger. Therefore, this means that the slow slip moment rate and the amplitude of the tremor are correlated on time scales shorter than 1 day. 
+
+\section{What will I add to the field?}
+ The outcome of this project will provide important information to the seismic community on if these nucleation related foreshocks occur before a significant number of earthquakes. I hope that with this project, I will be able to provide answers to my key research questions regarding this (see section 3.2). With this knowledge, I will then be able to look into the potential of earthquake forecasting in real-time of the data on a larger scale. 
+ 
+ I aim to apply the previous methods from others, mainly those done by \cite{Bouchon2011,Bouchon2013, Kato2012, Kato2014}, as these methods were shown to be effective in the foreshock sequence of the 1999 Magnitude 7.6 Izmit, Turkey and the 2011 Magnitude 9 Tohoku-Oki, Japan earthquakes. In applying this method in a general way, I will be able to extend this on a larger scale in order to analyse the foreshock sequences of previous earthquakes by using earthquake archives. In doing this, I can then apply this method to work in real-time, and so analyse the foreshock sequence of earthquakes on a potential global scale. 
+
+%\begin{figure}[h]
+%	\begin{center}
+%		\includegraphics[scale=0.5, trim=6cm 0cm 6cm 0cm]{Woe_eq.png}
+%		\caption{European earthquakes between 1000-2006 compiled in the SHARE European Earthquake Catalog (SHEEC) (from \cite{Woessner2015})}
+%		\label{Woe_eq}
+%	\end{center}
+%\end{figure}
+
+
+\chapter{Research aims}
+This project will look at analysing large quantities of earthquake data for specific cases of localised repeating events, which can be associated with either accelerated nucleation leading to larger earthquakes or with stable repeated slip. From this data, the potential at which the forecasting of catastrophic failure using techniques with real-time data assimilation will be assessed.
+
+\section{Research summary}
+I will first look at the 1999 Magnitude 7.6 earthquake that occurred in Izmit, Turkey. \citet{Bouchon2011} found that by stacking and cross-correlating lots of earthquake data, small signals were found to be foreshocks of the main event. These foreshocks, which would have been disregarded as noise, were found to have virtually identical repeater patterns, thus they would come from a similar starting point. This can be seen in Figure \ref{Bouchon_foreshocks}, which shows the first two foreshocks in the sequence. \cite{Bouchon2011} then used one of these foreshocks to cross-correlate with the rest of the earthquake data for this sequence and found that a total of 40 foreshocks occurred up to 44 minutes before the earthquake.  
+
+\begin{center}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.7, trim=1cm 0cm 0cm 0cm]{Bouchon_foreshocks.jpg}
+		\caption{Comparison of first and second foreshocks in the lead up to the 1999 Magnitude 7.6 Izmit, Turkey earthquake (from \cite{Bouchon2011})}
+		\label{Bouchon_foreshocks}
+	\end{figure}
+\end{center}
+
+\FloatBarrier
+
+I will replicate these results in order to have a sound methodology in place which effectively searches through various seismograms and picks out any repeating patterns which occur before the main event. I will do this by first examining Dr. Andrew Bell's (University of Edinburgh) dataset, sampled at the Tungurahua volcano (south of Quito, Ecuador). This dataset exhibits a repeating volcanic seismicity reading, as can be seen in a subset of the data in Figure \ref{volcano_rep}. My current task is to compile an algorithm which will effectively search through the data and `find' the repeater events by cross-correlating a segment of the dataset with the rest of the dataset, and repeat this until every segment has been cross-correlated. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5, trim=6cm 0cm 0cm 0cm]{sac.png}
+	\caption{Subset of seismicity data for the Tungurahua volcano, as collected by Dr. Andrew Bell (University of Edinburgh)}
+	\label{volcano_rep}
+\end{figure}
+
+Once I have established a methodology, I will then apply it to the Turkish dataset, in order to replicate the results from the paper by \cite{Bouchon2011}, before extending it to other large events to investigate whether these were preceded by nucleation-type foreshocks. As well as nucleation-type foreshocks, I will also look for other repeater sequences not related to nucleation in order to investigate whether there are any differences in the properties of these foreshocks.
+
+The results of the analyses will provide some information on the current models for earthquake nucleation, and will allow a quantification into the potential forecasting with use of this methodology.
+
+\section{Key research questions}
+Thus, there are five key research questions which I plan to address:
+\begin{enumerate}
+	\item Can the current methods on foreshocks due to nucleation be improved upon? 
+	\item Are there many earthquakes which have been had these nucleation type foreshocks occur?
+	\item How many of the significant earthquakes have had no nucleation related foreshocks?
+	\item How many repeater event clusters do not lead to a significant earthquake?
+	\item What are the implications of the physics behind earthquake nucleation, and what are the prospects for earthquake forecasting in real-time of such data?
+\end{enumerate}  
+
+\chapter{Time Plan}
+
+\section{Year one}
+In my first year, my main goal is be aware of the current literature of what has been done, and what is being done, in the field of earthquake forecasting. This includes not only this research plan, but a full literature review, as well as the confirmation report. 
+
+I am also expecting to have an algorithm which will search and identify for repeater patterns in earthquake data. This will be done by first replicating the results from \cite{Bouchon2011}, to find the foreshock pattern prior to the 1999 Magnitude 7.6 Izmit, Turkey earthquake, before moving onto more of a general code. My aim is to have this code working optimally by the end of my first year, with the possibility of a review paper being written during this time. I am also due to attend a workshop in February 2016 in order to build upon my ObsPy and Python skills for seismological purposes. I have summarised this in a prospective Gantt chart, as can be seen in Figure \ref{Gantt}. 
+
+\begin{landscape}
+	\begin{figure}[h!]
+		\begin{center}
+		\includegraphics[scale=0.8, trim=2cm 2cm 0cm 2cm]{Gantt_chart.pdf}
+		\caption[Gantt chart]{Time plan for projected work in year one}
+		\label{Gantt}
+		\end{center}
+	\end{figure}
+\end{landscape}
+
+\section{Year two}
+By my second year, I will be extending the breadth of the algorithm by analysing nucleation-related localisation foreshocks and comparing them to other events. This will be done to quantify the proportion of events which do have nucleation-related foreshocks. I will also look for non-nucleation related repeater sequences for further analysis. 
+
+During this time, I also aim to be writing a paper with a summary of my results thus far. If significant, I will also apply to conduct a presentation (oral or poster) at the annual European Geosciences Union conference, where the deadline will be 2016/2017 for the conference in 2017.
+
+\section{Year three}
+My third year will involve quantification of the earthquake nucleation model, and will look into the potential of forecasting with use of this method. The aim is to present my results (through an oral presentation or poster) at the American Geosciencies Union conference, applying for the 2018 slot. I also hope to have another paper published by this point, which will also summarise my results. 
+
+\chapter{Project Resources}
+\section{Terracorrelator}
+The main project resource that will be used in this project, is the high performance computing facility funded by NERC called the Terracorrelator. It is managed by the Edinburgh Compute and Data Facility (ECDF) and is able to be accessed via the Eddie nodes, which is a high-performance cluster of computers provided by the University of Edinburgh.
+
+The Terracorrelator has 300TB of local storage, two 2TB shared memory nodes and two other nodes which will allow for complex workflows. The capabilities of this machine will be of great benefit for the cross-correlation method, as it is expected to output a lot of data. With use of the Terracorrelator, it will allow for one memory node to keep ahead of new data arriving (for real-time simulations) and the other memory node for analysis of the data, which can then be (temporarily) stored on the local storage area. 
+
+\section{Travel}
+The other main project resource will be travel for educational purposes, such as conferences. I have already attended the VERCE course in Liverpool in July 2015, which was a course that looked at the data analysis and modelling methods for seismology purposes. The next workshop that I will be taking part in, will be an ObsPy course that occurs in February 2016 in Munich. This workshop will be looking at the aspects of induced seismicity. 
+
+Other expected travel costs will be for future conferences in year 2 and 3, such as the European Geosciences Union (EGU) and the American Geophysical Union (AGU) conferences. 
+
+\chapter{Data Management}
+\section{Type of data}
+I will be looking at seismograms, which are the graphical output from a seismograph, showing the amplitude of the ground motion as a function of time. From this data, I will be investigating where repeater events have occurred prior to an earthquake. These will be very small signals in comparison the main event, and so the data must be of very high quality. 
+
+I will obtain this data from a variety of earthquake archives, where they are saved as a SEED (Standard for the Exchange of Earthquake Data) file. The SEED file contains a timeseries of the seismology data, as well as several other contraints within the dataset (network code, station code, location ID, channel code and quality indicator). There is also metadata, which contains information on the instrument response and the location of the station where the measurement took place. This metadata file can either be included in the SEED file (i.e. a full SEED), or as a separate file (i.e. when a miniSEED file is saved, the metadata is in a Dataless SEED file).
+
+As this data will be directly downloaded from seismological archives, the analysis can be reproduced by others who have the same access to these archives.
+
+\section{Storage}
+The Terracorrelator section in the Project Resources chapter discusses the main data management of our system. As the data cannot be permanently stored on the Terracorrelator local storage (300TB), an external data storage will need to be investigated. Options include the University of Edinburgh's Data Store facility (500GB of storage - can be expanded for \textsterling 200 TB/year), Data Vault (future release of secure data storage), as well as external hard drives.  
+
+\chapter{Supervisory Arrangements}
+In order to keep on top of things, it has been arranged to meet roughly every month to go over what I have done, and what will be done in the future. After each meeting, I will write up the minutes and send to both Prof. Ian Main and Dr. Andrew Bell for confirmation on what has been discussed. If a specific short-term issue of action arises before the monthly meeting, then an additional meeting can be arranged. 
+
+As per the School's policy, an advisor is appointed in order to provide an independent source of advice outwith the supervisory team. In my case, Dr. Mark Chapman has been selected as my advisor. 
+
+\bibliography{mybib}
+
+\end{document}          
